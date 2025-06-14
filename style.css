@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: #000000;
+  color: hsl(0, 0%, 100%);
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px 0 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.address {
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(0, 0%, 80%);
+  margin: 20px 20px;
+  text-align: center; 
+  font-weight: 400;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  width: 300px;
+}
+
+.social-links button {
+  background-color: hsl(0, 0%, 20%);
+  border: 1px solid hsl(0, 0%, 30%);  
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width:100%;
+}
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .card {
+    font-size: 1.125rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  } 
+  h1 {
+    font-size: 1.5rem;
+  } 
+  p.address {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+  } 
+  .social-links a {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+  .social-links button {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+  footer {
+    font-size: 0.875rem;
+  }
+  .attribution {
+    font-size: 0.75rem;
+  }
+  .attribution a {
+    font-size: 0.75rem;
+  }
+  .social-links {
+    gap: 5px;
+  }
+  .social-links button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .social-links a {
+    width: 100%;
+    text-align: center;
+  }
+  .social-links a:hover {
+    text-decoration: underline;
+  }   
+}
